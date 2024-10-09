@@ -1,0 +1,122 @@
+:root{
+    --main-color: #096d75;
+    --text-color: #fff;
+    --bg-color-01: #1f242d;
+    --bg-color-02: #d3d5d8;
+    --color-00: #0000001a;
+}
+*{
+    scroll-behavior: smooth;
+}
+html{
+    font-family: "Montserrat", sans-serif; 
+    font-size: 16px;
+}
+body{
+    background-color: var(--bg-color-02);
+    height: 100vh;
+}
+.logo img{
+    width: 120px;
+    height: 180px;
+    border: solid 5px #000;
+    border-radius: 5px;
+}
+.interface{
+    max-width: 90vh;
+    margin-left: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+.options{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    ul{
+        display: flex;
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.options ul li{
+    margin: 0 70px 0 70px;
+    text-decoration: none;   
+    &:hover{
+        a{color: var(--text-color);}
+        transform: scale(1.25); 
+    }
+}
+.contato-button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 700px;
+    background-color: var(--main-color);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    &:hover{
+        background-color: #2dc7cc;
+        transform: scale(1.1);
+    }
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+    margin-left: 20%;
+    h1{
+        max-width: 60vh;
+    }
+    p{
+        font-size: 25px;
+        max-width: 90vh;
+    }
+}
+.projeto-container{
+    margin-top: 150px;
+    ul{
+        text-align: center;
+        font-size: 30px;
+        list-style-type: none;
+        li{
+            margin-bottom: 120px;
+        }
+        a{
+            text-decoration: none;
+            color: var(--main-color);
+            &:hover{
+                color: #2dc7cc;
+            }
+        }
+    }
+}
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+    margin-left: 20%;
+    h1{
+        max-width: 60vh;
+    }
+    p{
+        font-size: 25px;
+        max-width: 90vh;
+    }
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    iframe{
+        border: 0;
+        border-radius: 10px;
+    }
+}
